@@ -1,0 +1,16 @@
+@import "sass/helpers/variables";
+@import "sass/helpers/functions";
+@import "sass/helpers/mixins";
+@import "sass/helpers/keyframes";
+
+@import "sass/pages/global";
+
+@import "sass/layout/header";
+
+@import "sass/layout/grid";
+@import "sass/pages/home";
+
+@import "sass/components/headings.scss";
+@import "sass/components/btns.scss";
+
+@import "sass/layout/footer";

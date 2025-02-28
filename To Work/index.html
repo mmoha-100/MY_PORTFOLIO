@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/static/all.min.css">
+    <link rel="stylesheet" href="css/static/normalize.css">
+    <link rel="stylesheet" href="css/main.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+  </head><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+  <body class="dark">
+    <div class="header">
+      <h1> <a href="#home">Mohamed Habib</a></h1>
+      <ul>
+        <li> <a class="active" href="#home">Home</a></li>
+        <li> <a href="#about">About</a></li>
+        <li> <a href="#skills">Skills</a></li>
+        <li> <a href="#projects">Projects</a></li>
+        <li> <a href="#education">Education</a></li>
+        <li> <a href="#contact">Contact</a></li>
+      </ul>
+      <button class="show-nav-btn" href="#"> <i class="fa-solid fa-bars fa-fw"></i></button>
+    </div>
+    <!-- Start Landing -->
+    <div class="landing" id="home">
+      <div class="settings">
+        <button class="main-btn light-btn"><i class="fa-solid fa-sun light"></i></button>
+        <button class="main-btn dark-btn  d-none"><i class="fa-solid fa-moon dark"></i></button>
+      </div>
+      <p>My Name Is Mohamed, I am A <span>Web Developer</span>.</p><img src="media/imgs/me.png"><a class="main-btn" href="#about">See More</a>
+    </div>
+    <!-- End Landing -->
+    <!-- Start About-->
+    <div class="about" id="about">
+      <h2 class="section-header">About Me </h2>
+      <h4>A Childhood Spark: The Day My Passion for Technology Began</h4>
+      <div class="content"> 
+        <p> 
+          <Since>I Was Three Years Old, My Father Bought A PC For Our Family.</Since>
+          <It>Was The Most Beautiful And Efficient Day Of My Entire Life. That</It>
+          <Moment>Sparked My Passion For Technology And Set Me On A Path Of Discovery</Moment>
+          <And>Innovation.</And>
+        </p><img src="media/imgs/about.jpg">
+      </div>
+    </div>
+    <!-- End About-->
+    <!-- Start Skills-->
+    <div class="skills" id="skills">
+      <h2 class="section-header">My Skills</h2>
+      <h4>As A Web Developer, I Excel In These Skills</h4>
+      <div class="content"> 
+        <div class="skill"> 
+          <h3 class="name">HTML</h3>
+          <div class="progress"> <span data-progress="100%"></span></div>
+        </div>
+        <div class="skill"> 
+          <h3 class="name">CSS</h3>
+          <div class="progress"> <span data-progress="90%"></span></div>
+        </div>
+        <div class="skill"> 
+          <h3 class="name">JavaScript</h3>
+          <div class="progress"> <span data-progress="100%"></span></div>
+        </div>
+        <div class="skill"> 
+          <h3 class="name">Bootstrap</h3>
+          <div class="progress"> <span data-progress="70%"></span></div>
+        </div>
+        <div class="skill"> 
+          <h3 class="name">SASS</h3>
+          <div class="progress"> <span data-progress="100%"></span></div>
+        </div>
+        <div class="skill"> 
+          <h3 class="name">PugJS</h3>
+          <div class="progress"> <span data-progress="100%"></span></div>
+        </div>
+        <div class="skill">
+          <h3 class="name">GulpJS</h3>
+          <div class="progress"> <span data-progress="90%"></span></div>
+        </div>
+        <div class="skill">
+          <h3 class="name">React</h3>
+          <div class="progress"> <span data-progress="70%"></span></div>
+        </div>
+        <div class="skill">
+          <h3 class="name">PHP</h3>
+          <div class="progress"> <span data-progress="85%"></span></div>
+        </div>
+        <div class="skill">
+          <h3 class="name">MySQL 5</h3>
+          <div class="progress"> <span data-progress="80%"></span></div>
+        </div>
+        <div class="skill">
+          <h3 class="name">Laravel</h3>
+          <div class="progress"> <span data-progress="100%"></span></div>
+        </div>
+      </div>
+    </div>
+    <!-- End Skills-->
+    <!-- Start Projects-->
+    <div class="projects" id="projects">
+      <h2 class="section-header">My Projects</h2>
+      <h4>I Made Many Projects In Many Fields, Here Are Some</h4>
+      <ul class="fields"> 
+        <li class="disabled-btn" data-field="all">All</li>
+        <li data-field="cpp">C++</li>
+        <li data-field="web">Web</li>
+        <li data-field="games">Games</li>
+      </ul>
+      <div class="projects-container">
+        <div class="project" data-field="web"><img src="media/imgs/projects/1.png">
+          <div class="text"> 
+            <h3 class="project-title">Bootstrap Project</h3>
+            <p>Here Is My First Bootstrap Project.</p>
+          </div>
+        </div>
+        <div class="project" data-field="web"><img src="media/imgs/projects/2.png">
+          <div class="text">
+            <h3 class="project-title">SASS Multilingual Website</h3>
+            <p>It Was A Great Journey Especially To Make The Website Multilingual(Arabic And English).</p>
+          </div>
+        </div>
+        <div class="project" data-field="web"><img src="media/imgs/projects/3.png">
+          <div class="text">
+            <h3 class="project-title">JavaScript & CSS Are The Best</h3>
+            <p>This Is My Third Project And It Is Very Precious And Valuable In My Heart.</p>
+          </div>
+        </div>
+        <div class="project" data-field="cpp"><img src="media/imgs/projects/4.png">
+          <div class="text">
+            <h3 class="project-title">Bank Project Using C++</h3>
+            <p>My First Project Using C++ Was Very Big Project, Using OOP, Using Small Data Base.</p>
+          </div>
+        </div>
+        <div class="project" data-field="web"><img src="media/imgs/projects/5.png">
+          <div class="text">
+            <h3 class="project-title">Quiz Game(TechTonic)</h3>
+            <p>Using JSON Files, I Made Quiz Game Includes Tech Questions And Different Categories To Choose Between Them.</p>
+          </div>
+        </div>
+        <div class="project" data-field="web"><img src="media/imgs/projects/6.png">
+          <div class="text"> 
+            <h3 class="project-title">To Do List Using Local Storage</h3>
+            <p>I Used Local Storage, So If User Closed The Website It Will Still Be Saved If Didn't Delete Its Tasks.</p>
+          </div>
+        </div>
+        <div class="project" data-field="cpp"><img src="media/imgs/projects/7.png">
+          <div class="text">
+            <h3 class="project-title">ATM Project Using C++</h3>
+            <p>This Is My Second C++ Project, Using C++ Concepts To Make ATM With All Normal ATM Features.</p>
+          </div>
+        </div>
+        <div class="project" data-field="web"><img src="media/imgs/projects/8.png">
+          <div class="text">
+            <h3 class="project-title">Weather App</h3>
+            <p>This Project Is Based On API To Check The Weather State Wherever And Whenever.</p>
+          </div>
+        </div>
+        <div class="project" data-field="games"><img src="media/imgs/projects/9.png">
+          <div class="text">
+            <h3 class="project-title">Hangman Game</h3>
+            <p>Beautiful Game Using Basics Of Web: HTML, CSS And Advanced JavaScript</p>
+          </div>
+        </div>
+        <div class="project" data-field="games"><img src="media/imgs/projects/10.png">
+          <div class="text">
+            <h3 class="project-title">Guess The Word Game</h3>
+            <p>Beautiful Game Using Basics Of Web: HTML, CSS And Advanced JavaScript</p>
+          </div>
+        </div>
+        <div class="project" data-field="games"><img src="media/imgs/projects/11.png">
+          <div class="text">
+            <h3 class="project-title">Typing Speed Game</h3>
+            <p>Beautiful Game Using Basics Of Web: HTML, CSS And Advanced JavaScript</p>
+          </div>
+        </div>
+        <div class="project" data-field="web"><img src="media/imgs/projects/12.png">
+          <div class="text">
+            <h3 class="project-title">Fetch Github Repositories</h3>
+            <p>A Website For Fetching Github Repositories By Username.</p>
+          </div>
+        </div>
+      </div>
+      <p class="main-btn">See More On <span> <a href="https://github.com/mmoha-100" target="_blank"> <i class="fa-brands fa-github fa-fw"></i></a></span></p>
+    </div>
+    <!-- End Projects-->
+    <!-- Start Education-->
+    <div class="education" id="education"> 
+      <h2 class="section-header">Education</h2>
+      <h4>Here Are My Certificates</h4>
+      <ul> 
+        <ul class="the-base"> 
+          <p>The Base:</p>
+          <li> <a href="media/PDF/Certificates/English/B2+.pdf" download>01) B2+ English Certificate From SmallTalkToMe</a></li>
+          <li> <a href="media/PDF/Certificates/Programming/Abu Hadhud/1.pdf" download>02) Programming Foundations - Level 1</a></li>
+          <li> <a href="media/PDF/Certificates/Programming/Abu Hadhud/2.pdf" download>03) Algorithms & Problem-Solving - Level 1</a></li>
+          <li> <a href="media/PDF/Certificates/Programming/Abu Hadhud/3.pdf" download>04) Programming Using C++ Level - 1</a></li>
+          <li> <a href="media/PDF/Certificates/Programming/Abu Hadhud/4.pdf" download>05) Algorithms & Problem-Solving - Level 1 Using C++</a></li>
+          <li> <a href="media/PDF/Certificates/Programming/Abu Hadhud/5.pdf" download>06) Algorithms & Problem-Solving - Level 2</a></li>
+          <li> <a href="media/PDF/Certificates/Programming/Abu Hadhud/6.pdf" download>07) Introduction to Programming Using C++ - Level 2</a></li>
+          <li> <a href="media/PDF/Certificates/Programming/Abu Hadhud/7.pdf" download>08) Algorithms & Problem Solving - Level 3</a></li>
+          <li><a href="media/PDF/Certificates/Programming/Abu Hadhud/8.pdf" download>09) Algorithms & Problem Solving - Level 4</a></li>
+          <li><a href="media/PDF/Certificates/Programming/Abu Hadhud/10.pdf" download>10) OOP as it Should Be (Concepts)</a></li>
+          <li><a href="media/PDF/Certificates/Programming/Abu Hadhud/11.pdf" download>11) OOP as it Should Be (Applications)</a></li>
+          <li><a href="media/PDF/Certificates/Programming/Abu Hadhud/12.pdf" download>12) Data Structures Level - 1</a></li>
+        </ul>
+        <ul class="web"> 
+          <p>Web Development:</p>
+          <li> <a href="media/PDF/Certificates/Programming/Web Development/HTML.pdf" download>1) HTML</a></li>
+          <li> <a href="media/PDF/Certificates/Programming/Web Development/HTML.pdf" download>2) CSS</a></li>
+          <li> <a href="media/PDF/Certificates/Programming/Web Development/HTML.pdf" download>3) JavaScript</a></li>
+          <li> <a href="media/PDF/Certificates/Programming/Web Development/HTML.pdf" download>4) Web Development</a></li>
+        </ul>
+      </ul>
+      <p><a class="main-btn" href="media/imgs/CV.png" download>Download My CV</a></p>
+    </div>
+    <!-- End Education-->
+    <!-- Start Contact-->
+    <div class="contact" id="contact">
+      <h2 class="section-header">Contact Me</h2>
+      <h4>You Can Contact Me Using One Of These </h4>
+      <ul class="social-media">
+        <li> <a href="https://t.me/mmoha_101" target="_black"><i class="fa-brands fw-fw telegram fa-telegram"></i></a></li>
+        <li> <a href="https://instagram.com/mmoha_100" target="_black"><i class="fa-brands fw-fw instagram fa-instagram"></i></a></li>
+        <li> <a href="https://facebook.com/share/1AqZchrMJk" target="_black"><i class="fa-brands fw-fw facebook fa-facebook"></i></a></li>
+        <li> <a href="https://github.com/mmoha-100" target="_black"><i class="fa-brands fw-fw github fa-github"></i></a></li>
+      </ul>
+    </div>
+    <!-- End Contact-->
+    <div class="footer">
+      <p>&copy; 2025 All Rights Reserved</p>
+      <p>Designed By <span>Mohamed Habib</span></p>
+    </div>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

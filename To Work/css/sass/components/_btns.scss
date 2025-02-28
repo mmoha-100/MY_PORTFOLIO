@@ -1,0 +1,25 @@
+body.light {
+    .main-btn {
+        color: $blue;
+        border: 2px solid $blue;
+        background-color: transparent;
+        &:hover {
+            color: white;
+            background-color: $blue;
+        }
+    }
+}
+.main-btn {
+    color: white;
+    border: 2px solid white;
+    transition: $transition-duration;
+    background-color: transparent;
+    transition: 0.5s;
+    border-radius: 6px;
+    padding: 5px 15px;
+    font-weight: bold;
+    &:hover {
+        color: $blue;
+        background-color: white;
+    }
+}

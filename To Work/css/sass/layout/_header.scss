@@ -1,0 +1,109 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    user-select: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000000000000000;
+    h1 {
+        width: fit-content;
+        margin: 0;
+        font-size: 23px;
+        padding: 0;
+        cursor: pointer;
+        margin-left: 20px;
+        a {
+            color: $blue;
+        }
+    }
+    ul {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 20px;
+        transition: $transition-duration;
+        li {
+            height: fit-content;
+            width: fit-content;
+            font-size: 15px;
+            font-weight: bold;
+            a {
+                transition: $transition-duration;
+                border-bottom: 2px solid transparent;
+                display: block;
+                width: 100%;
+                &.active {
+                    @include activeNavAnchor;
+                }
+                &:hover {
+                    @include activeNavAnchor;
+                }
+            }
+        }
+        @media (max-width: 900px) {
+            top: -400px;
+            position: absolute;
+            left: 0;
+            background-color: white;
+            flex-direction: column;
+            width: 100%;
+            &.enabled {
+                display: flex;
+                opacity: 1;
+                top: 55px;
+            }
+            li {
+                width: 100%;
+                padding: 15px;
+                text-align: center;
+                &:not(:last-child) {
+                    border-bottom: 1px solid $blue;
+                }
+            }
+        }
+    }
+    .show-nav-btn {
+        display: none;
+        cursor: pointer;
+        background-color: $blue;
+        color: white;
+        padding: 5px;
+        height: 30px;
+        width: 30px;
+        border-radius: 6px;
+        border: none;
+        outline: none;
+        transition: $transition-duration;
+        &:hover {
+            background-color: $dark-blue;
+        }
+        @media (max-width: 900px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        svg {
+            pointer-events: none;
+        }
+    }
+}
+body.dark {
+    .header {
+        background-color: $dark-theme-nav;
+    }
+}
+body.light {
+    .header {
+        background-color: $light-theme-nav;
+        li {
+            background-color: $light-theme-nav;
+        }
+        li a:not([class="active"]) {
+            color: white;
+        }
+    }
+}
